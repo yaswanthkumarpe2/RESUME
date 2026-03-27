@@ -290,63 +290,6 @@ export default function Hero() {
           @yaswanth.dev
         </span>
         
-        {/* Profile Photo with Glowing Border - Square Format */}
-        <motion.div
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 0.5, type: "spring", stiffness: 260, damping: 20 }}
-          style={{
-            position: "absolute",
-            top: 100,
-            right: "6vw",
-            width: 170,
-            height: 170,
-            borderRadius: "12px", // Changed to square with slightly rounded corners
-            padding: 4,
-            background: `linear-gradient(45deg, ${C.neon}, transparent, ${C.neon})`,
-            boxShadow: `0 0 30px ${C.neon}66`,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            zIndex: 100,
-          }}
-        >
-          {/* Inner Glowing Frame */}
-          <motion.div
-            animate={{ 
-              boxShadow: [
-                `0 0 15px ${C.neon}66`,
-                `0 0 35px ${C.neon}aa`,
-                `0 0 15px ${C.neon}66`
-              ]
-            }}
-            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-            style={{
-              width: "100%",
-              height: "100%",
-              borderRadius: "8px", // Matches outer frame
-              background: C.black,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              overflow: "hidden",
-              border: `2px solid ${C.neon}66`,
-            }}
-          >
-            {/* User Profile Image */}
-            <img 
-              src="/WhatsApp Image 2026-03-26 at 6.57.31 PM.jpeg" 
-              alt="Yaswanth Profile"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                display: "block",
-              }}
-            />
-          </motion.div>
-        </motion.div>
-
         <span className="mono" style={{ fontSize: 11, color: "#555", letterSpacing: 2 }}>
           Full Stack ~ Dev
         </span>
